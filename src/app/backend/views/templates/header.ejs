@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="<%= appLang %>" class="<%= `${appDark} ${appChangeColor}` %>">
+<head>
+
+	<meta charset="<%= config.get('app.charset') %>">
+	<title><%= appTitleDescription %> | <%= config.get("app.title") %> - panel</title>
+	<meta name="google" content="notranslate">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<link type="text/plain" rel="author" href="/humans.txt" />
+	<link rel="icon" href="/assets/img/favicon.png">
+
+<% //  NOTE:  CALL CDN CCS ================================== -%>
+<% config.get("cdnsCss").forEach(c => { if (c.visible === true) { -%>
+	<link rel="stylesheet" href="<%= c.href %>"<%- c.integrity === null ? '' : ` integrity="${c.integrity}"` -%><%- c.crossorigin === null ? '' : ` crossorigin="${c.crossorigin}"` -%><%- c.referrerpolicy === null ? '' : ` referrerpolicy="${c.referrerpolicy}"` -%>>
+<% }}) -%>
+
+<% //  NOTE:  CALL CDN JS ================================== -%>
+<% config.get("cdnsJs").forEach(c => { if (c.visible === true && c.header === true) { -%>
+	<script<%- c.type === null ? '' : ` type="${c.type}"` -%> src="<%= c.src %>"<%- c.integrity === null ? '' : ` integrity="${c.integrity}"` -%><%- c.crossorigin === null ? '' : ` crossorigin="${c.crossorigin}"` -%><%- c.referrerpolicy === null ? '' : ` referrerpolicy="${c.referrerpolicy}"` -%>></script>
+<% }}) -%>
+
+</head>
+<body class="<%= appDesign %>">
+<% if (sessionStatus !== "on") { -%>
+	<main class="main-connect">
+		<header class="header">
+			<section class="box-header">
+				<picture class="logo-img" tabindex="0"></picture>
+
+				<div class="box-list">
+					<a class="box-link" href="/" target="_blank">
+						<i class="fas fa-home"></i>
+						<span><%= _l.get("header.home", "Home") %></span>
+					</a>
+					<a class="box-link" href="/panel">
+						<i class="fas fa-tachometer-alt"></i>
+						<span><%= _l.get("header.panel", "Panel") %></span>
+					</a>
+					<a class="box-link" href="/store" target="_blank">
+						<i class="fas fa-store"></i>
+						<span><%= _l.get("header.store", "Store") %></span>
+					</a>
+					<a class="box-link" href="/courses" target="_blank">
+						<i class="fas fa-book-open"></i>
+						<span><%= _l.get("header.courses", "Courses") %></span>
+					</a>
+				</div>
+			</section>
+
+			<i class="full-screen full-screen-on" tabindex="0"></i>
+			<i class="settings" tabindex="0"></i>
+		</header>
+<% } else { -%>
+	<main class="main-panel">
+		<header>header panel</header>
+<% } -%>
+
+		<section class="box-settings">
+			<select class="custom-select" label="<%= _l.get('header.labelLang', 'Language') %>" icon="true" icon-type="img" icon-path="/assets/img/langs" icon-ext="png" mode="mode-lang-<%= appLang %>">
+				<option icon="en" value="en" selected="selected"><%= _l.get("header.optionEnglish", "English") %></option>
+				<option icon="es" value="es"><%= _l.get("header.optionSpanish", "Spanish") %></option>
+			</select>
+
+			<select class="custom-select" label="<%= _l.get('header.labelDark', 'Mode dark') %>" icon="true" icon-type="awesome" mode="mode-dark-<%= appDarkName %>">
+				<option icon="fas fa-adjust" value="automatic" selected="selected"><%= _l.get("header.optionAutomatic", "Automatic") %></option>
+				<option icon="fas fa-sun" value="light"><%= _l.get("header.optionLight", "Light") %></option>
+				<option icon="fas fa-moon" value="dark"><%= _l.get("header.optionDark", "Dark") %></option>
+			</select>
+			
+			<select class="custom-select" label="<%= _l.get('header.labelDesign', 'Mode design') %>" icon="true" icon-type="img" icon-path="/assets/img/icons"  icon-ext="png" mode="mode-design-<%= appDesign %>">
+				<option icon="design-1" value="design-1" selected="selected"><%= _l.get("header.optionDesign1", "Design 1") %></option>
+				<option icon="design-2" value="design-2"><%= _l.get("header.optionDesign2", "Design 2") %></option>
+				<option icon="design-3" value="design-3"><%= _l.get("header.optionDesign3", "Design 3") %></option>
+				<option icon="design-4" value="design-4"><%= _l.get("header.optionDesign4", "Design 4") %></option>
+				<option icon="design-5" value="design-5"><%= _l.get("header.optionDesign5", "Design 5") %></option>
+				<option icon="design-6" value="design-6"><%= _l.get("header.optionDesign6", "Design 6") %></option>
+				<option icon="design-7" value="design-7"><%= _l.get("header.optionDesign7", "Design 7") %></option>
+			</select>
+
+			<select class="custom-select" label="<%= _l.get('header.labelChangeColor', 'Change color') %>" icon="true" icon-type="img" icon-path="/assets/img/icons"  icon-ext="png" mode="mode-change-color-<%= appChangeColor %>">
+				<option icon="color-0" value="color-0" selected="selected"><%= _l.get("header.optionChangeColor0", "Color 0") %></option>
+				<option icon="color-1" value="color-1" ><%= _l.get("header.optionChangeColor1", "Color 1") %></option>
+				<option icon="color-2" value="color-2"><%= _l.get("header.optionChangeColor2", "Color 2") %></option>
+				<option icon="color-3" value="color-3"><%= _l.get("header.optionChangeColor3", "Color 3") %></option>
+				<option icon="color-4" value="color-4"><%= _l.get("header.optionChangeColor4", "Color 4") %></option>
+				<option icon="color-5" value="color-5"><%= _l.get("header.optionChangeColor5", "Color 5") %></option>
+				<option icon="color-6" value="color-6"><%= _l.get("header.optionChangeColor6", "Color 6") %></option>
+				<option icon="color-7" value="color-7"><%= _l.get("header.optionChangeColor7", "Color 7") %></option>
+				<option icon="color-8" value="color-8"><%= _l.get("header.optionChangeColor7", "Color 8") %></option>
+			</select>
+		</section>

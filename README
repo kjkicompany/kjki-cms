@@ -1,0 +1,6 @@
+TITLE WEB CLIENT: KjKi CMS
+URL WEB CLIENT: http://127.0.0.1:3000
+TITLE WEB PANEL: KjKi CMS - Panel
+URL WEB PANEL: http://127.0.0.1:3000/panel
+VERSION WEB : 1.0.0
+CATEGORIES: mvc, backend, frontend, nodejs, cms, blog, shop, courses, resources

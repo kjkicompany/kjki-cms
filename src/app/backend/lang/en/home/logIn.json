@@ -1,0 +1,73 @@
+{
+	"logIn": {
+		"appTitleDescription": "Log in",
+
+		"bodyTitle": "Log in",
+		"bodyDescription": "Log in, so you can manage the web",
+
+		"placeholderEmail": "Enter email",
+		"placeholderPassword": "Enter password",
+		"placeholderCaptcha": "Enter captcha",
+
+		"labelEmail": "Email",
+		"labelPassword": "Password",
+		"labelCaptcha": "Captcha",
+
+		"rememberMe": "Remember me",
+
+		"formButton": "Log in",
+
+		"infoTermsPrivacyRecovery": "By logging in you accept our <a class='link-web' href='%s' target='_blank'>Terms</a> and <a class='link-web' href='%s' target='_blank'>Privacy</a><br><br><a class='link-web' href='%s'>Forgot your password?</a>",
+
+		"boxTitleTerms": "TERMS",
+		"boxContentTerms": "TERMS CONTENT",
+		"boxButtonTerms": "ACCEPT",
+
+		"boxTitlePrivacy": "PRIVACY",
+		"boxContentPrivacy": "PRIVACY CONTENT",
+		"boxButtonPrivacy": "ACCEPT",
+
+		"checkCsrf": "CSRF protection activated",
+
+		"checkEmailEmpty": "Email is empty",
+		"checkEmailMin": "Email minimum 6 characters",
+		"checkEmailMax": "Email maximum 100 characters",
+		"checkEmailChar": "Wrong email, example:<p class='text-warning'>name@domain.com</p>",
+
+		"checkPasswordEmpty": "Password is empty",
+		"checkPasswordMin": "Password minimum 8 characters",
+		"checkPasswordMax": "Password maximum 20 characters",
+		"checkPasswordChar": "Wrong password, accepted characters:<p class='text-warning'>a-z A-Z 0-9 @ * # _-</p>",
+		"checkPasswordUpperCase": "Incorrect password, at least one capital letter",
+		"checkPasswordLowerCase": "Incorrect password, at least one lowercase letter",
+		"checkPasswordNumber": "Incorrect password, at least one number",
+		"checkPasswordSpecial": "Incorrect password, minimum one special character:<p class='text-warning'>* # @ _-</p>",
+
+		"checkCaptchaEmpty": "Captcha is Empty",
+		"checkCaptchaMin": "Captcha minimum 7 characters",
+		"checkCaptchaMax": "Captcha maximum 7 characters",
+		"checkCaptchaChar": "Wrong captcha, accepted characters:<p class='text-warning'>A-Z 1-9</p>",
+		"checkCaptchaIncorrect": "Captcha incorrect",
+
+		"checkAccount": "Account incorrect",
+		"checkPrivilege": "Your account does not have privileges to connect in the panel",
+		"checkBanned": "Your account is blocked for violating the: <a class='link-warning' href='%s' target='_blank'>Terms</a> and <a class='link-warning' href='%s' target='_blank'>Privacy</a> of this website, click here to appeal: <a class='link-warning' href='%s' target='_blank'>Contact</a>",
+		"checkActivateAccount": "Your account is not active, click here: <a class='link-warning' href='%s'>Activate</a>",
+
+		"mailBodyTitle": "Verification of the account",
+		"mailContent": "Hello <b>%s,</b> we must verify that you are.<br><br>Security code:<h1>%s</h1>Copy and paste code in form verification of the account.<br><br>Verification date: <b>%s</b><br><br>If you did not create this account, ignore this message, your email will be removed from our website in the next 48 hours, a thousand apologies.",
+
+		"mailError": "Error sending mail",
+		"mailFrom": "Verification of the account",
+		"mailSubject": "Verification of the account in: %s",
+
+		"log": "Verifying the account from the panel",
+		"logTokenTemp": "tokenTemp deleted correctly from the panel",
+
+		"verify": "You are logging in from another device, click here: <a class='link-warning' href='%s'>Verify</a>",
+
+		"errorUpdate": "Error updating account",
+
+		"success": "Log in success<br>redirecting in:"
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"reset": {
+		"checkResetCompare": "Opción desactivada",
+		"appTitleDescription": "Restablece contraseña",
+
+		"bodyTitle": "Restablece contraseña",
+		"bodyDescription": "Restablece la contraseña, para que puedas administrar la web",
+
+		"placeholderPassword": "Ingrese contraseña",
+		"placeholderRepeatPassword": "Repita su contraseña",
+		"placeholderCaptcha": "Ingrese captcha",
+
+		"labelPassword": "Contraseña",
+		"labelRepeatPassword": "Repite contraseña",
+		"labelCaptcha": "Captcha",
+
+		"titleConfirmPasswordCopied": "Contraseña copiada!",
+
+		"formButton": "Restablecer contraseña",
+
+		"checkCsrf": "Protección CSRF activada",
+		"checkPasswordEmpty": "Contraseña está vacía",
+		"checkPasswordMin": "Contraseña mínimo 8 caracteres",
+		"checkPasswordMax": "Contraseña máximo 20 caracteres",
+		"checkPasswordChar": "Contraseña incorrecta, caracteres aceptados:<p class='text-warning'>a-z A-Z 0-9 @ * # _-</p>",
+		"checkPasswordUpperCase": "Contraseña incorrecta, al menos una letra mayúscula",
+		"checkPasswordLowerCase": "Contraseña incorrecta, al menos una letra minúscula",
+		"checkPasswordNumber": "Contraseña incorrecta, al menos un número",
+		"checkPasswordSpecial": "Contraseña incorrecta, mínimo un carácter especial:<p class='text-warning'>* # @ _-</p>",
+		"checkRepeatPasswordEmpty": "Repite contraseña está vacía",
+		"checkRepeatPasswordMin": "Repite contraseña mínimo 8 caracteres",
+		"checkRepeatPasswordMax": "Repite contraseña máximo 20 caracteres",
+		"checkRepeatPasswordChar": "Repite contraseña incorrecta, caracteres aceptados:<p class='text-warning'>a-z A-Z 0-9 @ * # _-</p>",
+		"checkRepeatPasswordUpperCase": "Repite contraseña incorrecta, al menos una letra mayúscula",
+		"checkRepeatPasswordLowerCase": "Repite contraseña incorrecta, al menos una letra minúscula",
+		"checkRepeatPasswordNumber": "Repite contraseña incorrecta, mínimo un número",
+		"checkRepeatPasswordSpecial": "Repite contraseña incorrecta, mínimo un carácter especial:<p class='text-warning'>* # @ _-</p>",
+		"checkRepeatPasswordCompare": "Contraseña y repite de contraseña no coinciden",
+		"checkPasswordPrevious": "Contraseña no debe ser igual a la anterior.",
+
+		"checkCaptchaEmpty": "Captcha está vacío",
+		"checkCaptchaMin": "Captcha mínimo 7 caracteres",
+		"checkCaptchaMax": "Captcha máximo 7 caracteres",
+		"checkCaptchaChar": "Captcha incorrecta, caracteres aceptados:<p class='text-warning'>A-Z 1-9</p>",
+		"checkCaptchaIncorrect": "Captcha incorrecta",
+
+		"mailBodyTitle": "Cuenta recuperada",
+		"mailContent": "Hola <b>%s,</b> La cuenta se recuperó con éxito.<br><br>Enlace del panel:<br><br><a class='template-button' href='%s' target='_blank'><span><b>PANEL</b></span></a><br><br>Fecha de recuperación: <b>%s</b><br><br>Si no creó esta cuenta, ignore este mensaje, su correo electrónico se eliminará de nuestro sitio web en las próximas 48 horas, mil disculpas.",
+		"mailError": "Error al enviar el correo",
+		"mailFrom": "Cuenta recuperada",
+		"mailSubject": "Cuenta recuperada con éxito en: %s",
+		"log": "Cuenta recuperada correctamente desde el panel.",
+		"success": "Cuenta recuperada con éxito<br>redirigiendo en:",
+		"errorUpdate": "Error al actualizar la cuenta"
+	}
+}

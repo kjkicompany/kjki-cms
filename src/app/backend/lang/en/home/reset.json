@@ -1,0 +1,57 @@
+{
+	"reset": {
+		"checkResetCompare": "Option deactivated",
+		"appTitleDescription": "Reset password",
+
+		"bodyTitle": "Reset password",
+		"bodyDescription": "Reset password, so you can manage the web",
+
+		"placeholderPassword": "Enter password",
+		"placeholderRepeatPassword": "Repeat password",
+		"placeholderCaptcha": "Enter captcha",
+
+		"labelPassword": "Password",
+		"labelRepeatPassword": "Repeat Password",
+		"labelCaptcha": "Captcha",
+
+		"titleConfirmPasswordCopied": "Password copied!",
+
+		"formButton": "Reset password",
+
+		"checkCsrf": "CSRF protection activated",
+
+		"checkPasswordEmpty": "Password is empty",
+		"checkPasswordMin": "Password minimum 8 characters",
+		"checkPasswordMax": "Password maximum 20 characters",
+		"checkPasswordChar": "Wrong password, accepted characters:<p class='text-warning'>a-z A-Z 0-9 @ * # _-</p>",
+		"checkPasswordUpperCase": "Incorrect password, at least one capital letter",
+		"checkPasswordLowerCase": "Incorrect password, at least one lowercase letter",
+		"checkPasswordNumber": "Incorrect password, at least one number",
+		"checkPasswordSpecial": "Incorrect password, minimum one special character:<p class='text-warning'>* # @ _-</p>",
+		"checkRepeatPasswordEmpty": "Repeat password is empty",
+		"checkRepeatPasswordMin": "Repeat password at least 8 characters",
+		"checkRepeatPasswordMax": "Repeat password maximum 20 characters",
+		"checkRepeatPasswordChar": "Repeat wrong password, characters accepted:<p class='text-warning'>a-z A-Z 0-9 @ * # _-</p>",
+		"checkRepeatPasswordUpperCase": "Repeat wrong password, at least one capital letter",
+		"checkRepeatPasswordLowerCase": "Repeat wrong password, at least one lowercase letter",
+		"checkRepeatPasswordNumber": "Repeat wrong password, minimum one number",
+		"checkRepeatPasswordSpecial": "Repeat wrong password, minimum one special character:<p class='text-warning'>* # @ _-</p>",
+		"checkRepeatPasswordCompare": "Password and repeat password do not match",
+		"checkPasswordPrevious": "Password should not be equal to the previous",
+
+		"checkCaptchaEmpty": "Captcha is Empty",
+		"checkCaptchaMin": "Captcha minimum 7 characters",
+		"checkCaptchaMax": "Captcha maximum 7 characters",
+		"checkCaptchaChar": "Wrong captcha, accepted characters:<p class='text-warning'>A-Z 1-9</p>",
+		"checkCaptchaIncorrect": "Captcha incorrect",
+
+		"mailBodyTitle": "Account recovered",
+		"mailContent": "Hello <b>%s,</b> the account was recovered successfully.<br><br>Panel link:<br><br><a class='template-button' href='%s' target='_blank'><span><b>PANEL</b></span></a><br><br>Recovering date: <b>%s</b><br><br>If you did not create this account, ignore this message, your email will be removed from our website in the next 48 hours, a thousand apologies.",
+		"mailError": "Error sending mail",
+		"mailFrom": "Account recovered",
+		"mailSubject": "Account successfully recovered in: %s",
+		"log": "Account recovered correctly from the panel",
+		"success": "Recovered account successfully<br>redirecting in:",
+		"errorUpdate": "Error updating account"
+	}
+}

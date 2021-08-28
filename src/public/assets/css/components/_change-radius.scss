@@ -1,0 +1,42 @@
+//  INFO:  CHANGE RADIUS
+
+//  NOTE:  RADIUS ON
+// ============================================================
+$radius-on: (
+	"radius": 5px
+);
+
+//  NOTE:  RADIUS OFF
+// ============================================================
+$radius-off: (
+	"radius": 0
+);
+
+//  NOTE:  RADIUS DEFAULT
+// ============================================================
+$default: (
+	"radius": 5px
+);
+
+//  NOTE:  BODY RADIUS ON
+// ============================================================
+body.radius-on {
+	@each $key, $value in $radius-on {
+		--#{$key}: #{$value};
+	}
+}
+
+//  NOTE:  BODY RADIUS OFF
+// ============================================================
+body.radius-off {
+	@each $key, $value in $radius-off {
+		--#{$key}: #{$value};
+	}
+}
+//  NOTE:  BODY RADIUS DEFAULT
+// ============================================================
+body {
+	@each $key, $value in $default {
+		--#{$key}: #{$value};
+	}
+}

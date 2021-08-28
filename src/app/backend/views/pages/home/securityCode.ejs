@@ -1,0 +1,79 @@
+		<section class="section">
+<% if (check === true) { -%>
+			<form class="form" action="<%= urlFormPost %>" method="post" autocomplete="off" spellcheck="false" noValidate>
+				<div class="group-form">
+					<a href="/panel" class="logo-form">&nbsp;</a>
+				</div>
+
+				<div class="group-form">
+					<p class="title-form"><%= bodyTitle %></p>
+				</div>
+
+				<div class="group-form box-info"><%- bodyDescription %></div>
+
+				<div class="group-form">
+					<div class="custom-input" icon="true">
+						<input value="" class="text" id="input-code" type="text" name="code" placeholder="<%= placeholderCode %>" required />
+						<i class="icon fas fa-keyboard"></i>
+						<label class="label" for="input-code"><%= labelCode %></label>
+					</div>
+					<div class="status" id="status-code"></div>
+				</div>
+
+				<div class="group-form">
+					<img class="imgCaptcha" src="/panel/captcha" alt="" width="100%" height="50px">
+
+					<div class="custom-input" icon="true">
+						<input value="" class="text captcha" id="input-captcha" type="text" name="captcha" placeholder="<%= placeholderCaptcha %>" required />
+						<i class="icon fas fa-robot"></i>
+						<label class="label" for="input-captcha"><%= labelCaptcha %></label>
+						<i class="captcha-icon fas fa-retweet" id="change-captcha"></i>
+					</div>
+					<div class="status" id="status-captcha"></div>
+				</div>
+
+				<input type="hidden" name="csrfToken" value="<%= csrfToken %>">
+
+				<div class="group-form">
+					<button class="button-default" type="submit"><%= formButton %></button>
+				</div>
+
+				<div class="group-form">
+					<div class="status" id="status"></div>
+				</div>
+			</form>
+
+			<section class="box-form" style="margin-top:10px;">
+				<center>
+					<%= infoText %>
+					<br><br>
+					<form class="form-reSend" action="<%= urlReSend %>" method="post">
+						<input type="hidden" name="csrfToken" value="<%= csrfToken %>">
+						<button class='button-reSend button-default'><%= infoButton %></button>
+					</form>
+				</center>
+
+				<div class="group-form">
+					<center><br><%- func.getArrayRedSocials("awesome-1", null, true, null, null, null) %></center>
+				</div>
+			</section>
+<% } else { -%>
+			<section class="box-form">
+				<div class="group-form">
+					<a href="/panel" class="logo-form">&nbsp;</a>
+				</div>
+
+				<div class="group-form">
+						<p class="title-form"><%= bodyTitle %></p>
+				</div>
+				
+				<div class="group-form status _danger">
+					<%- htmlContent %>
+				</div>
+
+				<div class="group-form">
+					<center><br><%- func.getArrayRedSocials("awesome-1", null, true, null, null, null) %></center>
+				</div>
+			</section>
+<% } -%>
+		</section>

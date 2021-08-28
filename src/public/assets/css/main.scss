@@ -1,0 +1,31 @@
+//  INFO:  MAIN
+
+//  NOTE:  IMPORT
+// ============================================================
+@import "components/change-light-dark";
+@import "components/change-color";
+@import "components/reset";
+@import "components/fonts";
+@import "components/change-radius";
+@import "components/change-designs";
+
+//  NOTE:  BODY
+// ============================================================
+body {
+	background-color: var(--color-1);
+	color: var(--color-2);
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	user-select: none;
+	cursor: default;
+
+	overflow: hidden;
+}
+
+//  NOTE:  IMPORT
+// ============================================================
+@import "components/effects";
+@import "components/mixin";
+@import "components/components";
+@import "components/templates";
+@import "components/pages";

@@ -1,0 +1,72 @@
+{
+	"logIn": {
+		"appTitleDescription": "Inicie Sesión",
+
+		"bodyTitle": "Inicie Sesión",
+		"bodyDescription": "Inicie Sesión, para que puedas administrar la web",
+
+		"placeholderEmail": "Ingrese su correo",
+		"placeholderPassword": "Ingrese su contraseña",
+		"placeholderCaptcha": "Ingrese captcha",
+
+		"labelEmail": "Correo",
+		"labelPassword": "Contraseña",
+		"labelCaptcha": "Captcha",
+
+		"rememberMe": "Recuerdame",
+
+		"formButton": "Inicie Sesión",
+
+		"infoTermsPrivacyRecovery": "Al iniciar sesión, aceptas nuestros <a class='link-web' href='%s' target='_blank'>Términos</a> y <a class='link-web' href='%s' target='_blank'>Privacidad</a><br><br><a class='link-web' href='%s'>¿Olvidaste tu contraseña?</a>",
+
+		"boxTitleTerms": "TÉRMINOS",
+		"boxContentTerms": "TÉRMINOS CONTENIDO",
+		"boxButtonTerms": "ACEPTAR",
+
+		"boxTitlePrivacy": "PRIVACIDAD",
+		"boxContentPrivacy": "PRIVACIDAD CONTENIDO",
+		"boxButtonPrivacy": "ACEPTAR",
+
+		"checkCsrf": "Protección CSRF activada",
+		"checkEmailEmpty": "Correo está vacío",
+		"checkEmailMin": "Correo mínimo 6 caracteres",
+		"checkEmailMax": "Correo máximo 100 caracteres",
+		"checkEmailChar": "Correo incorrecto, ejemplo:<p class='text-warning'>nombre@dominio.com</p>",
+
+		"checkPasswordEmpty": "Contraseña está vacía",
+		"checkPasswordMin": "Contraseña mínimo 8 caracteres",
+		"checkPasswordMax": "Contraseña máximo 20 caracteres",
+		"checkPasswordChar": "Contraseña incorrecta, caracteres aceptados:<p class='text-warning'>a-z A-Z 0-9 @ * # _-</p>",
+		"checkPasswordUpperCase": "Contraseña incorrecta, al menos una letra mayúscula",
+		"checkPasswordLowerCase": "Contraseña incorrecta, al menos una letra minúscula",
+		"checkPasswordNumber": "Contraseña incorrecta, al menos un número",
+		"checkPasswordSpecial": "Contraseña incorrecta, mínimo un carácter especial:<p class='text-warning'>* # @ _-</p>",
+
+		"checkCaptchaEmpty": "Captcha está vacío",
+		"checkCaptchaMin": "Captcha mínimo 7 caracteres",
+		"checkCaptchaMax": "Captcha máximo 7 caracteres",
+		"checkCaptchaChar": "Captcha incorrecta, caracteres aceptados:<p class='text-warning'>A-Z 1-9</p>",
+		"checkCaptchaIncorrect": "Captcha incorrecta",
+
+		"checkAccount": "Cuenta incorrecta",
+		"checkPrivilege": "Su cuenta no tiene privilegios para conectarse en el panel",
+		"checkBanned": "Su cuenta está bloqueada por violar los: <a class='link-warning' href='%s' target='_blank'>Términos</a> y <a class='link-warning' href='%s' target='_blank'>Privacidad</a> de este sitio web, haga clic aquí para apelar: <a class='link-warning' href='%s' target='_blank'>Contacto</a>",
+		"checkActivateAccount": "Su cuenta no está activa, haga clic aquí: <a class='link-warning' href='%s'>Activar</a>",
+
+		"mailBodyTitle": "Verificación de la cuenta.",
+		"mailContent": "Hola <b>%s,</b> debemos verificar que usted es.<br><br>Código de seguridad:<h1>%s</h1>Copiar y pegar el código en el formulario verificación de la cuenta.<br><br>Fecha de verificación: <b>%s</b><br><br>Si no creó esta cuenta, ignore este mensaje, su correo electrónico se eliminará de nuestro sitio web en las próximas 48 horas, mil disculpas.",
+
+		"mailError": "Error al enviar el correo",
+		"mailFrom": "Verificación de la cuenta.",
+		"mailSubject": "Verificación de la cuenta en: %s",
+
+		"log": "Verificando la cuenta del panel",
+		"logTokenTemp": "tokenTemp eliminado correctamente desde el panel",
+
+		"verify": "Está iniciando sesión desde otro dispositivo, haga clic aquí: <a class='link-warning' href='%s'>Verificar</a>",
+
+		"errorUpdate": "Error al actualizar la cuenta",
+
+		"success": "Inicio de sesión Éxitoso<br>Redirigiendo en:"
+	}
+}

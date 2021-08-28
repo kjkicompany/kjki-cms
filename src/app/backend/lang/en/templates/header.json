@@ -1,0 +1,33 @@
+{
+	"header": {
+		"home": "Home",
+		"panel": "Panel",
+		"courses": "Courses",
+		"store": "Store",
+		"labelLang": "Language",
+		"optionEnglish": "English",
+		"optionSpanish": "Spanish",
+		"labelDark": "Mode dark",
+		"optionAutomatic": "Automatic",
+		"optionLight": "Light",
+		"optionDark": "Dark",
+		"labelDesign": "Mode design",
+		"optionDesign1": "Design 1",
+		"optionDesign2": "Design 2",
+		"optionDesign3": "Design 3",
+		"optionDesign4": "Design 4",
+		"optionDesign5": "Design 5",
+		"optionDesign6": "Design 6",
+		"optionDesign7": "Design 7",
+		"labelChangeColor": "Change color",
+		"optionChangeColor0": "Color 0",
+		"optionChangeColor1": "Color 1",
+		"optionChangeColor2": "Color 2",
+		"optionChangeColor3": "Color 3",
+		"optionChangeColor4": "Color 4",
+		"optionChangeColor5": "Color 5",
+		"optionChangeColor6": "Color 6",
+		"optionChangeColor7": "Color 7",
+		"optionChangeColor8": "Color 8"
+	}
+}

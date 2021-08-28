@@ -1,0 +1,38 @@
+//  INFO:  MIXIN
+
+//  NOTE:  TRANSITION
+// ============================================================
+@mixin transition($transitionProperty, $transitionDuration, $transitionTimingFunction) {
+	transition-property: $transitionProperty;
+	transition-duration: $transitionDuration;
+	transition-timing-function: $transitionTimingFunction;
+}
+
+//  NOTE:  ICONS FONTAWESOME HEADER
+// ============================================================
+@mixin icon-header($zIndex, $right, $width, $height, $textAlign, $cursor, $content, $fontSize, $color, $colorHover) {
+	z-index: $zIndex;
+	position: absolute;
+	right: $right;
+	width: $width;
+	height: $height;
+	text-align: $textAlign;
+	line-height: $height;
+	cursor: $cursor;
+
+	&::before {
+		font-family: "Font Awesome\ 5 Free";
+		content: $content;
+		font-size: $fontSize;
+		font-weight: 900;
+		color: $color;
+		@include transition(color, 0.3s, ease-in-out);
+	}
+
+	&:hover,
+	&:focus {
+		&::before {
+			color: $colorHover;
+		}
+	}
+}

@@ -1,0 +1,57 @@
+//  INFO:  CHANGE LIGHT DARK
+
+//  NOTE:  COLOR LIGHT
+// ============================================================
+$light: (
+	"color-1": #ebebeb,
+	"color-2": #022b3b,
+	"color-3": #ccc,
+	"color-4": #ddd
+);
+
+//  NOTE:  COLOR DARK
+// ============================================================
+$dark: (
+	"color-1": #022b3b,
+	"color-2": #ebebeb,
+	"color-3": #034c69,
+	"color-4": #01202c
+);
+
+//  NOTE:  COLOR DEFAULT
+// ============================================================
+$default: (
+	"color-1": #ebebeb,
+	"color-2": #022b3b,
+	"color-3": #ddd,
+	"color-4": #aaa,
+	"info": #17a2b8,
+	"success": #28a745,
+	"warning": #faad14,
+	"danger": #dc3545,
+	"text": #ebebeb
+);
+
+//  NOTE:  HTML LIGHT
+// ============================================================
+html.light {
+	@each $key, $value in $light {
+		--#{$key}: #{$value};
+	}
+}
+
+//  NOTE:  HTML DARK
+// ============================================================
+html.dark {
+	@each $key, $value in $dark {
+		--#{$key}: #{$value};
+	}
+}
+
+//  NOTE:  HTML DEFAULT
+// ============================================================
+html {
+	@each $key, $value in $default {
+		--#{$key}: #{$value};
+	}
+}

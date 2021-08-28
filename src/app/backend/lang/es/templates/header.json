@@ -1,0 +1,33 @@
+{
+	"header": {
+		"home": "Inicio",
+		"panel": "Panel",
+		"courses": "Cursos",
+		"store": "Tienda",
+		"labelLang": "Lenguaje",
+		"optionEnglish": "Ingles",
+		"optionSpanish": "Español",
+		"labelDark": "Modo obscuro",
+		"optionAutomatic": "Automático",
+		"optionLight": "Claro",
+		"optionDark": "Obscuro",
+		"labelDesign": "Modo diseño",
+		"optionDesign1": "Diseño 1",
+		"optionDesign2": "Diseño 2",
+		"optionDesign3": "Diseño 3",
+		"optionDesign4": "Diseño 4",
+		"optionDesign5": "Diseño 5",
+		"optionDesign6": "Diseño 6",
+		"optionDesign7": "Diseño 7",
+		"labelChangeColor": "Cambiar color",
+		"optionChangeColor0": "Color 0",
+		"optionChangeColor1": "Color 1",
+		"optionChangeColor2": "Color 2",
+		"optionChangeColor3": "Color 3",
+		"optionChangeColor4": "Color 4",
+		"optionChangeColor5": "Color 5",
+		"optionChangeColor6": "Color 6",
+		"optionChangeColor7": "Color 7",
+		"optionChangeColor8": "Color 8"
+	}
+}

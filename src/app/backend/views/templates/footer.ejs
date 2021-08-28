@@ -1,0 +1,28 @@
+			<footer class="footer">
+				<span class="copyright">
+					&copy; <%= config.get("app.created") %> - <%= func.formatDateTime("year") %> | <%= config.get("app.title") %>
+				</span>
+				
+				<span class="version">
+					<%= _l.get("footer.version", "Version") %>: <%= config.get("app.version") %>
+				</span>
+			</footer>
+		</container>
+	</main>
+
+	<div class="loading _page"></div>
+
+	<div class="box-cookie">
+		<span class="text-cookie">
+			<%= _l.get("footer.privacy", "This website uses cookies so that you have the best experience, if you continue sailing, you are giving you your consent to the acceptance of cookies.") %>
+		</span>
+		<button class="button-default button-cookie"><%= _l.get("footer.ok", "ACCEPTS") %></button>
+	</div>
+
+<% //  NOTE:  CALL CDN JS ================================== -%>
+<% config.get("cdnsJs").forEach(c => { if (c.visible === true && c.header === false) { -%>
+	<script<%- c.type === null ? '' : ` type="${c.type}"` -%> src="<%= c.src %>"<%- c.integrity === null ? '' : ` integrity="${c.integrity}"` -%><%- c.crossorigin === null ? '' : ` crossorigin="${c.crossorigin}"` -%><%- c.referrerpolicy === null ? '' : ` referrerpolicy="${c.referrerpolicy}"` -%>></script>
+<% }}) -%>
+
+</body>
+</html>

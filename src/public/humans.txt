@@ -1,0 +1,31 @@
+/* TEAM */
+  Title: KjKi CMS
+  Url: https://127.0.0.1:3000
+  Webmaster: KjKi
+  Contact: kjkicompany [at] gmail.com
+  Facebook: n/a
+  Instagram: n/a
+  Youtube: n/a
+  Twitter: n/a
+  Linkedin: n/a
+  Twitch: n/a
+  Tiktok: n/a
+  Pinterest: n/a
+  Gmail: kjkicompany [at] gmail.com
+  Outlook: kjkicompany [at] outlook.com
+  Yahoo: kjkicompany [at] yahoo.com
+  Location: Peru, Lima
+  Git: https://github.com/kjkicompany
+
+/* TANKS */
+  Google
+  Microsoft
+  Linux
+  NodeJs
+  mongoDb
+  
+/* SITE */
+  Last update: 2021/01/01
+  Language: Spanish / English
+  Doctype: HTML5
+  IDE: VsCode Studio

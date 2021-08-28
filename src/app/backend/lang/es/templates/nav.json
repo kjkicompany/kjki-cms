@@ -1,0 +1,34 @@
+{
+	"nav": {
+		"dashboard": "Panel",
+		"articles": "Artículos",
+		"media": "Medios",
+		"pages": "Páginas",
+		"testimonials": "Testimoniales",
+		"courses": "Cursos",
+		"store": "Tienda",
+		"users": "Usuarios",
+		"newsletter": "Boletín informativo",
+		"memberships": "Membresías",
+		"subscriptions": "Suscripciones",
+		"themes": "Temas",
+		"settings": "Ajustes",
+		"logout": "Salir",
+
+		"all": "Todos",
+		"add": "Agregar",
+		"category": "Categorías",
+		"tags": "Etiquetas",
+		"comments": "Comentarios",
+		"library": "Biblioteca",
+		"students": "Estudiantes",
+		"products": "Productos",
+		"orders": "Pedidos",
+		"delivery": "Entrega",
+		"suppliers": "Proveedores",
+		"profile": "Perfil",
+		"spread": "Difundir",
+		"general": "General",
+		"language": "Lenguaje"
+	}
+}

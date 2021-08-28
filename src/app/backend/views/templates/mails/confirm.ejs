@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="<%= appLang %>">
+<head>
+	<meta charset="<%= config.get('app.charset') %>">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title><%= mailBodyTitle %></title>
+	<style>
+		.template-div {
+			position: relative;
+			margin: auto;
+			padding:10px;
+			background: #ebebeb;
+			width: auto;
+			height: auto;
+			color: #022b3b;
+			text-align: center;
+			border-radius: 5px;
+		}
+
+		.template-button {
+			padding:10px;
+			background: #022b3b;
+			width: auto; 
+			height: 40px;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+		
+		.template-button span {
+			color: #ebebeb;
+		}
+
+		img {
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="template-div">
+		<a href="<%= config.get('app.url') %>" target="_blank"><img src='<%= mailUrlLogo %>' width='200px' height='200px' alt='logo' title='logo'></a>
+		<br><br>
+		<h1><%= mailBodyTitle %></h1>
+		<%- mailContent %>
+		<br><br>
+		<%- redSocials %>
+	</div>
+</body>
+</html>

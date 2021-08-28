@@ -1,0 +1,60 @@
+{
+	"securityCode": {
+		"checkAccountNotFound": "La cuenta no existe",
+		"errorCode": "Error de activación",
+		"accountActivate": "La cuenta ya está activa.",
+		"appTitleDescription": "Activando cuenta",
+
+		"bodyTitle": "Activando cuenta",
+		"bodyDescription": "Hemos enviado su correo un código, copie y pegue en este formulario para activar su cuenta",
+
+		"placeholderCode": "Ingrese el código",
+		"placeholderCaptcha": "Ingrese captcha",
+
+		"labelCode": "Código",
+		"labelCaptcha": "Captcha",
+
+		"formButton": "Activar",
+
+		"infoText": "¿No llegó el código a tu correo?",
+		"infoButton": "Reenviar código",
+
+		"checkCsrf": "Protección CSRF activada",
+		"checkCodeEmpty": "Código está vacío",
+		"checkCodeMin": "Código mínimo 6 caracteres",
+		"checkCodeMax": "Código máximo 6 caracteres",
+		"checkCodeChar": "Código incorrecto, caracteres aceptados:<p class='text-warning'>a-z A-Z 0-9</p>",
+
+		"checkCaptchaEmpty": "Captcha está vacío",
+		"checkCaptchaMin": "Captcha mínimo 7 caracteres",
+		"checkCaptchaMax": "Captcha máximo 7 caracteres",
+		"checkCaptchaChar": "Captcha incorrecta, caracteres aceptados:<p class='text-warning'>A-Z 1-9</p>",
+		"checkCaptchaIncorrect": "Captcha incorrecta",
+
+		"checkCodeNotFound": "Código incorrecto",
+		"mailBodyTitle": "Cuenta activada",
+		"mailContent": "Hola <b>%s,</b> La cuenta se activó con éxito.<br><br>Enlace del panel:<br><br><a class='template-button' href='%s' target='_blank'><span><b>PANEL</b></span></a><br><br>Fecha de activación: <b>%s</b><br><br>Si no creó esta cuenta, ignore este mensaje, su correo se eliminará de nuestro sitio web en las próximas 48 horas, mil disculpas.",
+		"mailError": "Error al enviar el correo",
+		"mailFrom": "Cuenta activada",
+		"mailSubject": "Cuenta activada con éxito en: %s",
+		"log": "cuenta admin activada correctamente desde el panel",
+		"success": "Cuenta activada con éxito<br>redirigiendo en:",
+		"errorUpdate": "Error actualizando la cuenta",
+
+		"errorCodeVerify": "Error de verificación",
+
+		"appTitleDescriptionVerify": "Verificando cuenta",
+		"bodyTitleVerify": "Verificando cuenta",
+		"bodyDescriptionVerify": "Hemos enviado su correo un código, copie y pegue en este formulario para verificar su cuenta",
+		"formButtonVerify": "Verificar",
+
+		"mailBodyTitleVerify": "Cuenta verificada",
+		"mailContentVerify": "Hola <b>%s,</b> La cuenta fue verificada con éxito.<br><br>Panel link:<br><br><a class='template-button' href='%s' target='_blank'><span><b>PANEL</b></span></a><br><br>Fecha de verificación: <b>%s</b><br><br>Si no creó esta cuenta, ignore este mensaje, su correo electrónico se eliminará de nuestro sitio web en las próximas 48 horas, mil disculpas.",
+		"mailFromVerify": "Cuenta verificada",
+		"mailSubjectVerify": "Cuenta verificada con éxito en: %s",
+
+		"logVerify": "Cuenta verificada correctamente desde el panel",
+
+		"successVerify": "La cuenta se verificó con éxito<br>Redirigiendo en:"
+	}
+}

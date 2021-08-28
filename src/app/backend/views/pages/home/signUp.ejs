@@ -1,0 +1,122 @@
+			<section class="section">
+				<form class="form" action="<%= urlFormPost %>" method="post" autocomplete="off" spellcheck="false" noValidate>
+					<div class="group-form">
+						<a href="/panel" class="logo-form">&nbsp;</a>
+					</div>
+
+					<div class="group-form">
+						<p class="title-form"><%= bodyTitle %></p>
+					</div>
+
+					<div class="group-form">
+						<p class="description-form"><%= bodyDescription %></p>
+					</div>
+
+					<div class="group-form">
+						<div class="custom-input" icon="true">
+							<input value="" class="text" id="input-firstName" type="text" name="firstName" placeholder="<%= placeholderFirstName %>" required />
+							<i class="icon fas fa-user"></i>
+							<label class="label" for="input-firstName"><%= labelFirstName %></label>
+						</div>
+						<div class="status" id="status-firstName"></div>
+					</div>
+
+					<div class="group-form">
+						<div class="custom-input" icon="true">
+							<input value="" class="text" id="input-lastName" type="text" name="lastName" placeholder="<%= placeholderLastName %>" required />
+							<i class="icon fas fa-user"></i>
+							<label class="label" for="input-lastName"><%= labelLastName %></label>
+						</div>
+						<div class="status" id="status-lastName"></div>
+					</div>
+
+					<div class="group-form">
+						<div class="custom-input" icon="true">
+							<input value="" class="text" id="input-nickName" type="text" name="nickName" placeholder="<%= placeholderNickName %>" required />
+							<i class="icon fas fa-user"></i>
+							<label class="label" for="input-nickName"><%= labelNickName %></label>
+						</div>
+						<div class="status" id="status-nickName"></div>
+					</div>
+
+					<div class="group-form">
+						<div class="custom-input" icon="true">
+							<input value="" class="text" id="input-email" type="text" name="email" placeholder="<%= placeholderEmail %>" required />
+							<i class="icon fas fa-at"></i>
+							<label class="label" for="input-email"><%= labelEmail %></label>
+						</div>
+						<div class="status" id="status-email"></div>
+					</div>
+
+					<div class="group-form">
+						<div class="custom-input" icon="true">
+							<input value="" class="text" id="input-repeatEmail" type="text" name="repeatEmail" placeholder="<%= placeholderRepeatEmail %>" required />
+							<i class="icon fas fa-at"></i>
+							<label class="label" for="input-repeatEmail"><%= labelRepeatEmail %></label>
+						</div>
+						<div class="status" id="status-repeatEmail"></div>
+					</div>
+
+					<div class="group-form">
+						<div class="custom-input" icon="true" passwordGenerate="true">
+							<input value="" class="text password _password-hide" id="input-password" type="text" name="password" placeholder="<%= placeholderPassword %>" required />
+							<i class="icon fas fa-lock"></i>
+							<label class="label" for="input-password"><%= labelPassword %></label>
+							<i class="password-icon-show fas fa-eye" id="change-password"></i>
+							<i class="password-icon-random fas fa-random" id="generate-password" title="<%= titleConfirmPasswordCopied %>"></i>
+							<div class="password-progress-bar">
+								<div class="password-progress-value"></div>
+							</div>
+						</div>
+						<div class="status" id="status-password"></div>
+					</div>
+
+					<div class="group-form">
+						<div class="custom-input" icon="true" passwordGenerate="true">
+							<input value="" class="text password _password-hide" id="input-repeatPassword" type="text" name="repeatPassword" placeholder="<%= placeholderRepeatPassword %>" required />
+							<i class="icon fas fa-lock"></i>					
+							<label class="label" for="input-repeatPassword"><%= labelRepeatPassword %></label>
+							<i class="password-icon-show fas fa-eye" id="change-password"></i>
+							<i class="password-icon-random fas fa-random" id="generate-password" title="<%= titleConfirmPasswordCopied %>"></i>
+							<div class="password-progress-bar">
+								<div class="password-progress-value"></div>
+							</div>
+						</div>
+						<div class="status" id="status-repeatPassword"></div>
+					</div>
+
+					<div class="group-form">
+						<img class="imgCaptcha" src="/panel/captcha" alt="" width="100%" height="50px">
+
+						<div class="custom-input" icon="true">
+							<input value="" class="text captcha" id="input-captcha" type="text" name="captcha" placeholder="<%= placeholderCaptcha %>" required />
+							<i class="icon fas fa-robot"></i>
+							<label class="label" for="input-captcha"><%= labelCaptcha %></label>
+							<i class="captcha-icon fas fa-retweet" id="change-captcha"></i>
+						</div>
+						<div class="status" id="status-captcha"></div>
+					</div>
+
+					<div class="group-form">
+						<div class="custom-checkbox" id="input-accept" tabindex="0">
+							<input id="accept" type="checkbox" name="accept">
+							<label for="accept"><%- acceptTermsPrivacy %></label>
+						</div>
+						<div class="status" id="status-accept"></div>
+					</div>
+
+					<input type="hidden" name="csrfToken" value="<%= csrfToken %>">
+
+					<div class="group-form">
+						<button class="button-default" type="submit"><%= formButton %></button>
+					</div>
+
+					<div class="group-form">
+						<div class="status" id="status" tabindex="0"></div>
+					</div>
+
+					<div class="group-form">
+						<center><br><%- func.getArrayRedSocials("awesome-1", null, true, null, null, null) %></center>
+					</div>
+				</form>
+			</section>

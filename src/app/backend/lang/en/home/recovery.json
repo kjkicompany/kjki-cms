@@ -1,0 +1,52 @@
+{
+	"recovery": {
+		"appTitleDescription": "Recovery your account",
+
+		"bodyTitle": "Recovery your account",
+		"bodyDescription": "Recovery your account, so you can manage the web",
+
+		"placeholderEmail": "Enter email",
+		"placeholderCaptcha": "Enter captcha",
+
+		"labelEmail": "Email",
+		"labelCaptcha": "Captcha",
+
+		"formButton": "Recovery",
+
+		"infoTermsPrivacyLogIn": "When recovering the account in you accept our <a class='link-web' href='%s' target='_blank'>Terms</a> and <a class='link-web' href='%s' target='_blank'>Privacy</a><br><br><a class='link-web' href='%s'>Log in</a>",
+
+		"boxTitleTerms": "TERMS",
+		"boxContentTerms": "TERMS CONTENT",
+		"boxButtonTerms": "ACCEPT",
+
+		"boxTitlePrivacy": "PRIVACY",
+		"boxContentPrivacy": "PRIVACY CONTENT",
+		"boxButtonPrivacy": "ACCEPT",
+
+		"checkCsrf": "CSRF protection activated",
+
+		"checkEmailEmpty": "Email is empty",
+		"checkEmailMin": "Email minimum 6 characters",
+		"checkEmailMax": "Email maximum 100 characters",
+		"checkEmailChar": "Wrong email, example:<p class='text-warning'>name@domain.com</p>",
+
+		"checkCaptchaEmpty": "Captcha is Empty",
+		"checkCaptchaMin": "Captcha minimum 7 characters",
+		"checkCaptchaMax": "Captcha maximum 7 characters",
+		"checkCaptchaChar": "Wrong captcha, accepted characters:<p class='text-warning'>A-Z 1-9</p>",
+		"checkCaptchaIncorrect": "Captcha incorrect",
+
+		"checkAccount": "Email not exists",
+		"checkBanned": "Your account is blocked for violating the: <a class='link-warning' href='%s' target='_blank'>Terms</a> and <a class='link-warning' href='%s' target='_blank'>Privacy</a> of this website, click here to appeal: <a class='link-warning' href='%s' target='_blank'>Contact</a>",
+		"checkActivateAccount": "Your account is not active, click here: <a class='link-warning' href='%s'>Activate</a>",
+
+		"mailBodyTitle": "Recovering the account",
+		"mailContent": "Hello <b>%s,</b> we are recovering your account.<br><br>Recovery link:<br><br><a class='template-button' href='%s' target='_blank'><span><b>RESET PASSWORD</b></span></a><br><br>Recovering date: <b>%s</b><br><br>If you did not create this account, ignore this message, your email will be removed from our website in the next 48 hours, a thousand apologies.",
+		"mailError": "Error sending mail",
+		"mailFrom": "Recovering the account",
+		"mailSubject": "Recovering your account in: %s",
+		"log": "Recovering the account from the panel",
+		"success": "we are recovering your account, check your email<br>redirecting in:",
+		"errorUpdate": "Error updating account"
+	}
+}

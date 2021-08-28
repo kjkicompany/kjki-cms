@@ -1,0 +1,1297 @@
+//  INFO:  COMPONENTS
+
+//  NOTE:  LINKS STATUS
+// ============================================================
+.link-info {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--info);
+	cursor: pointer;
+
+	&:after {
+		content: "";
+		display: block;
+		background-color: var(--info);
+		width: 0;
+		height: 2px;
+		@include transition(width, 0.3s, ease-in-out);
+	}
+
+	&:focus,
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+}
+
+.link-success {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--success);
+	cursor: pointer;
+
+	&:after {
+		content: "";
+		display: block;
+		background-color: var(--success);
+		width: 0px;
+		height: 2px;
+		@include transition(width, 0.3s, ease-in-out);
+	}
+
+	&:focus,
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+}
+
+.link-warning {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--warning);
+	cursor: pointer;
+
+	&:after {
+		content: "";
+		display: block;
+		background-color: var(--warning);
+		width: 0px;
+		height: 2px;
+		@include transition(width, 0.3s, ease-in-out);
+	}
+
+	&:focus,
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+}
+
+.link-danger {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--danger);
+	cursor: pointer;
+
+	&:after {
+		content: "";
+		display: block;
+		background-color: var(--danger);
+		width: 0px;
+		height: 2px;
+		@include transition(width, 0.3s, ease-in-out);
+	}
+
+	&:focus,
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+}
+
+.link-web {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--change-1);
+	cursor: pointer;
+
+	&:after {
+		content: "";
+		display: block;
+		background-color: var(--change-1);
+		width: 0;
+		height: 2px;
+		@include transition(width, 0.3s, ease-in-out);
+	}
+
+	&:focus,
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+}
+
+//  NOTE:  TEXTS STATUS
+// ============================================================
+.text-info {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--info);
+}
+
+.text-success {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--success);
+}
+
+.text-warning {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--warning);
+}
+
+.text-danger {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--danger);
+}
+
+//  NOTE:  CUSTOM INPUT TEXT PASSWORD CAPTCHA SEARCH DATE
+// ============================================================
+.custom-input {
+	position: relative;
+	min-width: 150px;
+	height: 50px;
+
+	&[icon="false"] {
+		img.icon,
+		i.icon {
+			display: none;
+		}
+
+		.label {
+			left: 8px;
+		}
+		.text {
+			padding-left: 6px;
+		}
+	}
+
+	&[passwordGenerate="true"] {
+		.text {
+			&.password {
+				padding-right: 65px;
+			}
+		}
+
+		.password-icon-show {
+			right: 40px;
+		}
+		.password-icon-hide {
+			right: 41px;
+		}
+	}
+
+	&[passwordGenerate="false"] {
+		.text {
+			&.password {
+				padding-right: 32px;
+			}
+		}
+
+		.password-icon-show {
+			right: 10px;
+		}
+		.password-icon-hide {
+			right: 11px;
+		}
+
+		.password-icon-random {
+			display: none;
+		}
+	}
+
+	img.icon {
+		position: absolute;
+		top: 12px;
+		left: 8px;
+		width: 28px;
+		height: 28px;
+		@include transition(all, 0.3s, ease-in-out);
+		pointer-events: none;
+	}
+
+	i.icon {
+		position: absolute;
+		top: 12px;
+		left: 12px;
+		width: 24px;
+		height: 24px;
+		@include transition(all, 0.3s, ease-in-out);
+		color: var(--change-1);
+		font-size: 24px;
+		font-weight: 900;
+		font-style: normal;
+		pointer-events: none;
+	}
+
+	.label {
+		position: absolute;
+		top: 16px;
+		left: 45px;
+		color: var(--change-1);
+		font-size: 16px;
+		font-weight: 400;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		max-width: calc(100% - 90px);
+		@include transition(all, 0.3s, ease-in-out);
+		pointer-events: none;
+	}
+
+	.text {
+		position: absolute;
+		padding-left: 45px;
+		padding-right: 10px;
+		background-color: transparent;
+		width: 100%;
+		height: 50px;
+		color: var(--color-2);
+		font-size: 16px;
+		font-weight: 400;
+		border-style: solid;
+		border-color: var(--change-1);
+		border-radius: var(--radius);
+		@include transition(all, 0.3s, ease-in-out);
+		cursor: pointer;
+
+		&::placeholder {
+			font-family: "Roboto", sans-serif;
+			visibility: hidden;
+			opacity: 0;
+			@include transition(all, 0.3s, ease-in-out);
+		}
+
+		&:hover,
+		&:focus {
+			border-color: var(--change-3);
+
+			&::selection {
+				background-color: var(--change-3);
+				color: var(--text);
+			}
+
+			&::placeholder {
+				visibility: visible;
+				opacity: 1;
+				color: var(--change-3);
+				font-size: 16px;
+				font-weight: 400px;
+			}
+
+			~ img.icon {
+				left: 10px;
+				width: 24px;
+				height: 24px;
+			}
+
+			~ i.icon {
+				left: 15px;
+				color: var(--change-3);
+				font-size: 20px;
+			}
+
+			~ .label {
+				left: 6px;
+				max-width: calc(100% - 20px);
+				color: var(--change-3);
+				font-size: 12px;
+			}
+
+			~ .password-icon-show,
+			~ .password-icon-hide,
+			~ .password-icon-random,
+			~ .captcha-icon {
+				color: var(--change-3);
+			}
+		}
+
+		&._valid,
+		&:valid {
+			padding-top: 16px;
+
+			&::placeholder {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			~ img.icon {
+				left: 10px;
+				width: 24px;
+				height: 24px;
+			}
+
+			~ i.icon {
+				left: 15px;
+				font-size: 20px;
+			}
+
+			~ .label {
+				left: 6px;
+				max-width: calc(100% - 20px);
+				font-size: 12px;
+			}
+		}
+
+		&.captcha {
+			padding-right: 32px;
+		}
+
+		&._danger {
+			color: var(--danger);
+			border-color: var(--danger);
+
+			&::selection {
+				background-color: var(--danger);
+				color: var(--text);
+			}
+
+			&::placeholder,
+			~ i.icon,
+			~ .label,
+			~ .password-icon-show,
+			~ .password-icon-hide,
+			~ .password-icon-random,
+			~ .captcha-icon {
+				color: var(--danger);
+			}
+
+			&:hover,
+			&:focus {
+				~ i.icon,
+				~ .label,
+				~ .password-icon-show,
+				~ .password-icon-hide,
+				~ .password-icon-random,
+				~ .captcha-icon {
+					color: var(--danger);
+				}
+			}
+		}
+
+		&._success {
+			color: var(--success);
+			border-color: var(--success);
+
+			&::selection {
+				background-color: var(--success);
+				color: var(--text);
+			}
+
+			&::placeholder,
+			~ i.icon,
+			~ .label,
+			~ .password-icon-show,
+			~ .password-icon-hide,
+			~ .password-icon-random,
+			~ .captcha-icon {
+				color: var(--success);
+			}
+
+			&:hover,
+			&:focus {
+				~ i.icon,
+				~ .label,
+				~ .password-icon-show,
+				~ .password-icon-hide,
+				~ .password-icon-random,
+				~ .captcha-icon {
+					color: var(--success);
+				}
+			}
+		}
+
+		&._password-hide {
+			font-family: "text-security-circle";
+		}
+
+		&._password-show {
+			font-family: "Roboto", sans-serif;
+		}
+	}
+
+	.password-icon-show {
+		position: absolute;
+		top: 15px;
+		width: 20px;
+		height: 20px;
+		display: none;
+		opacity: 0;
+		color: var(--text-input-icon);
+		font-size: 20px;
+		font-weight: 900;
+		font-style: normal;
+		cursor: pointer;
+		@include transition(color, 0.3s, ease-in-out);
+
+		&:hover {
+			color: var(--change-3);
+		}
+	}
+
+	.password-icon-hide {
+		position: absolute;
+		top: 15px;
+		width: 20px;
+		height: 20px;
+		color: var(--text-input-icon);
+		font-size: 20px;
+		font-weight: 900;
+		font-style: normal;
+		cursor: pointer;
+		@include transition(color, 0.3s, ease-in-out);
+
+		&:hover {
+			color: var(--change-3);
+		}
+	}
+
+	.password-icon-random {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		width: 20px;
+		height: 20px;
+		color: var(--text-input-icon);
+		font-size: 20px;
+		font-weight: 900;
+		font-style: normal;
+		cursor: pointer;
+		@include transition(color, 0.3s, ease-in-out);
+
+		&:hover {
+			color: var(--change-3);
+		}
+	}
+
+	.captcha-icon {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		width: 20px;
+		height: 20px;
+		color: var(--text-input-icon);
+		font-size: 20px;
+		font-weight: 900;
+		font-style: normal;
+		cursor: pointer;
+		@include transition(color, 0.3s, ease-in-out);
+
+		&:hover {
+			color: var(--change-3);
+		}
+	}
+
+	.password-progress-bar {
+		position: absolute;
+		top: 44px;
+		left: 13px;
+		background-color: var(--color-2);
+		width: calc(100% - 25px);
+		height: 4px;
+		display: none;
+		opacity: 0;
+		@include transition(all, 0.3s, ease-in-out);
+		cursor: pointer;
+
+		.password-progress-value {
+			height: 4px;
+			@include transition(all, 0.3s, ease-in-out);
+
+			&._zero {
+				width: 0%;
+			}
+
+			&._danger-1 {
+				background-color: var(--danger);
+				width: 20%;
+			}
+
+			&._danger-2 {
+				background-color: var(--danger);
+				width: 40%;
+			}
+
+			&._warning-1 {
+				background-color: var(--warning);
+				width: 60%;
+			}
+
+			&._warning-2 {
+				background-color: var(--warning);
+				width: 80%;
+			}
+
+			&._success {
+				background-color: var(--success);
+				width: 100%;
+			}
+		}
+	}
+}
+
+// NOTE: CUSTOM SELECT
+// ============================================================
+.custom-selects {
+	position: relative;
+	min-width: 150px;
+
+	.custom-select {
+		display: grid;
+		grid-template-columns: 40px 1fr 32px;
+		background-color: transparent;
+		width: 100%;
+		height: 50px;
+		border-style: solid;
+		border-color: var(--change-1);
+		border-radius: var(--radius);
+		cursor: pointer;
+		@include transition(all, 0.3s, ease-in-out);
+
+		img {
+			align-self: center;
+			justify-self: center;
+			width: 28px;
+			height: 28px;
+			@include transition(all, 0.3s, ease-in-out);
+			pointer-events: none;
+		}
+
+		i {
+			position: relative;
+			top: 12px;
+			left: 12px;
+			color: var(--change-1);
+			font-size: 24px;
+			font-weight: 900;
+			font-style: normal;
+			@include transition(all, 0.3s, ease-in-out);
+			pointer-events: none;
+		}
+
+		.label {
+			position: absolute;
+			top: 16px;
+			left: 45px;
+			color: var(--change-1);
+			font-size: 16px;
+			font-weight: 400;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			max-width: calc(100% - 80px);
+			@include transition(all, 0.3s, ease-in-out);
+			pointer-events: none;
+		}
+
+		.text {
+			padding-left: 4px;
+			align-self: center;
+			color: var(--color-2);
+			font-size: 16px;
+			font-weight: 400;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			pointer-events: none;
+			@include transition(all, 0.3s, ease-in-out);
+		}
+
+		.arrow {
+			position: absolute;
+			right: 18px;
+			pointer-events: none;
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 17px;
+				width: 2px;
+				height: 15px;
+				border-radius: var(--radius);
+				@include transition(all, 0.3s, ease-in-out);
+			}
+
+			&::before {
+				left: 5px;
+				transform: rotate(45deg);
+				background-color: var(--change-1);
+			}
+
+			&::after {
+				left: -5px;
+				transform: rotate(-45deg);
+				background-color: var(--change-1);
+			}
+		}
+
+		&:hover,
+		&:focus {
+			border-color: var(--change-3);
+
+			img {
+				margin-left: 5px;
+				width: 24px;
+				height: 24px;
+			}
+
+			i {
+				left: 15px;
+				color: var(--change-3);
+				font-size: 20px;
+			}
+
+			& > .label {
+				left: 8px;
+				max-width: calc(100% - 80px);
+				font-size: 12px;
+				color: var(--change-3);
+			}
+
+			& > .text {
+				color: var(--change-3);
+			}
+
+			& > .arrow {
+				&::before,
+				&::after {
+					background-color: var(--change-3);
+				}
+			}
+		}
+
+		&._valid {
+			img {
+				margin-left: 5px;
+				width: 24px;
+				height: 24px;
+			}
+
+			i {
+				left: 15px;
+				font-size: 20px;
+			}
+
+			& > .label {
+				left: 8px;
+				max-width: calc(100% - 80px);
+				font-size: 12px;
+			}
+		}
+
+		&[icon="false"] {
+			grid-template-columns: 1fr 32px;
+
+			.label {
+				left: 8px;
+			}
+
+			.text {
+				padding-left: 8px;
+			}
+		}
+
+		&._open-reverse {
+			~ .options {
+				top: -157px;
+				opacity: 1;
+				visibility: visible;
+				height: auto;
+				max-height: 154px;
+				border-style: solid;
+				border-color: var(--change-3);
+			}
+
+			> ::after {
+				left: -5px;
+				transform: rotate(45deg);
+			}
+
+			> ::before {
+				left: 5px;
+				transform: rotate(-45deg);
+			}
+		}
+
+		&._open {
+			~ .options {
+				top: 55px;
+				opacity: 1;
+				visibility: visible;
+				height: auto;
+				max-height: 154px;
+				border-style: solid;
+				border-color: var(--change-3);
+			}
+
+			> ::after {
+				left: -5px;
+				transform: rotate(45deg);
+			}
+
+			> ::before {
+				left: 5px;
+				transform: rotate(-45deg);
+			}
+		}
+
+		&._danger {
+			color: var(--danger);
+			border-color: var(--danger);
+
+			& > i,
+			& > .text,
+			& > .label {
+				color: var(--danger);
+			}
+
+			& > .arrow {
+				&::before,
+				&::after {
+					background-color: var(--danger);
+				}
+			}
+		}
+
+		&._success {
+			color: var(--success);
+			border-color: var(--success);
+
+			& > i,
+			& > .text,
+			& > .label {
+				color: var(--success);
+			}
+
+			& > .arrow {
+				&::before,
+				&::after {
+					background-color: var(--success);
+				}
+			}
+		}
+	}
+
+	.options {
+		z-index: 1;
+		position: absolute;
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		background-color: var(--color-1);
+		width: 100%;
+		height: 0;
+		border: 0;
+		border-radius: var(--radius);
+		overflow-y: auto;
+		overflow-x: hidden;
+		@include transition(opacity, 0.3s, ease-in-out);
+
+		&::-webkit-scrollbar-button:single-button:vertical:decrement {
+			height: 4px;
+			border-top-right-radius: var(--radius);
+		}
+
+		&::-webkit-scrollbar-button:single-button:vertical:increment {
+			height: 4px;
+			border-bottom-right-radius: var(--radius);
+		}
+
+		&._decrement-scroll {
+			&::-webkit-scrollbar-button:single-button:vertical:decrement {
+				background-color: var(--change-1);
+			}
+		}
+
+		&._increment-scroll {
+			&::-webkit-scrollbar-button:single-button:vertical:increment {
+				background-color: var(--change-1);
+			}
+		}
+
+		.option {
+			display: grid;
+			grid-template-columns: auto 1fr;
+			grid-template-areas: "icon text";
+			height: 50px;
+			cursor: pointer;
+			@include transition(all, 0.3s, ease-in-out);
+
+			img {
+				grid-area: icon;
+				margin-left: 5px;
+				align-self: center;
+				justify-self: center;
+				width: 32px;
+				height: 32px;
+			}
+
+			i {
+				grid-area: icon;
+				padding-left: 5px;
+				width: 32px;
+				height: 32px;
+				color: var(--change-1);
+				font-size: 24px;
+				line-height: 50px;
+				text-align: center;
+				font-weight: 900;
+				font-style: normal;
+			}
+
+			span {
+				grid-area: text;
+				align-self: center;
+				justify-self: center;
+				padding-left: 6px;
+				padding-right: 5px;
+				width: 100%;
+				color: var(--color-2);
+				font-size: 16px;
+				font-weight: 400;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+
+			&.selected,
+			&:hover {
+				background-color: var(--change-2);
+
+				i {
+					color: var(--text);
+				}
+
+				span {
+					color: var(--text);
+				}
+
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+//  NOTE:  CUSTOM CHECKBOX
+// ============================================================
+.custom-checkbox {
+	position: relative;
+	padding: 10px 0 10px 20px;
+	margin: 0 10px 0 10px;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: var(--color-2);
+
+	label {
+		font-size: 16px;
+		font-weight: 400;
+		cursor: pointer;
+		@include transition(all, 0.3s, ease-in-out);
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			border-radius: var(--radius);
+		}
+
+		&:before {
+			left: 0;
+			width: 30px;
+			height: 30px;
+			margin: -15px 0 0;
+			background-color: var(--color-1);
+			border-width: 2px;
+			border-style: solid;
+			border-color: var(--change-1);
+			@include transition(all, 0.3s, ease-in-out);
+		}
+
+		&:after {
+			left: 5px;
+			padding-top: 3px;
+			margin: -10px 0 0;
+			background-color: var(--change-1);
+			width: 20px;
+			height: 20px;
+			opacity: 0;
+			font-family: "Font Awesome\ 5 Free";
+			content: "\f00c";
+			font-size: 14px;
+			font-weight: 900;
+			font-style: normal;
+			text-align: center;
+			color: var(--text);
+			transform: translate3d(0, 0, 40px) scale(0.5);
+			@include transition("opacity, transform", 0.25s, ease-in-out);
+		}
+	}
+
+	input[type="checkbox"] {
+		visibility: hidden;
+
+		&:checked + label {
+			&:after {
+				transform: translate3d(0, 0, 0);
+				opacity: 1;
+			}
+		}
+	}
+
+	&:hover,
+	&:focus {
+		label {
+			color: var(--change-3);
+
+			&:before {
+				border-color: var(--change-3);
+			}
+		}
+	}
+
+	&._danger {
+		label {
+			color: var(--danger);
+
+			&:before {
+				border-color: var(--danger);
+			}
+
+			&:after {
+				background-color: var(--danger);
+			}
+		}
+	}
+
+	&._success {
+		label {
+			color: var(--success);
+
+			&:before {
+				border-color: var(--success);
+			}
+
+			&:after {
+				background-color: var(--success);
+			}
+		}
+	}
+}
+
+//  NOTE:  CUSTOM RADIO
+// ============================================================
+.custom-radio {
+	position: relative;
+	padding: 10px 0 10px 20px;
+	margin: 0 10px 0 10px;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: var(--color-2);
+
+	label {
+		font-size: 16px;
+		font-weight: 400;
+		cursor: pointer;
+		@include transition(all, 0.3s, ease-in-out);
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			border-radius: 100%;
+		}
+
+		&:before {
+			left: 0;
+			width: 30px;
+			height: 30px;
+			margin: -15px 0 0;
+			background-color: var(--color-1);
+			border-width: 2px;
+			border-style: solid;
+			border-color: var(--change-1);
+			@include transition(all, 0.3s, ease-in-out);
+		}
+
+		&:after {
+			left: 5px;
+			padding-left: 1px;
+			padding-top: 4px;
+			margin: -10px 0 0;
+			background-color: var(--change-1);
+			width: 20px;
+			height: 20px;
+			opacity: 0;
+			font-family: "Font Awesome\ 5 Free";
+			content: "\f00c";
+			font-size: 12px;
+			font-weight: 900;
+			font-style: normal;
+			text-align: center;
+			color: var(--text);
+			transform: translate3d(0, 0, 40px);
+			@include transition("opacity, transform", 0.25s, ease-in-out);
+		}
+	}
+
+	input[type="radio"] {
+		visibility: hidden;
+
+		&:checked + label {
+			&:after {
+				transform: translate3d(0, 0, 0);
+				opacity: 1;
+			}
+		}
+	}
+
+	&:hover,
+	&:focus {
+		label {
+			color: var(--change-3);
+
+			&:before {
+				border-color: var(--change-3);
+			}
+		}
+	}
+
+	&._danger {
+		label {
+			color: var(--danger);
+
+			&:before {
+				border-color: var(--danger);
+			}
+
+			&:after {
+				background-color: var(--danger);
+			}
+		}
+	}
+
+	&._success {
+		label {
+			color: var(--success);
+
+			&:before {
+				border-color: var(--success);
+			}
+
+			&:after {
+				background-color: var(--success);
+			}
+		}
+	}
+}
+
+//  NOTE:  CUSTOM BUTTONS
+// ============================================================
+.button-default {
+	padding: 10px;
+	background-color: var(--change-1);
+	width: 100%;
+	height: 50px;
+	color: var(--text);
+	font-size: 18px;
+	font-weight: 700;
+	border-width: 2px;
+	border-style: solid;
+	border-color: var(--change-1);
+	border-radius: var(--radius);
+	cursor: pointer;
+	@include transition(all, 0.3s, ease-in-out);
+
+	&:hover,
+	&:focus {
+		background-color: var(--change-2);
+		color: var(--text);
+		border-color: var(--change-2);
+		box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+	}
+
+	&:disabled {
+		background-color: var(--change-2);
+		color: var(--text);
+		border-color: var(--change-2);
+		box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+		pointer-events: none;
+	}
+}
+
+//  NOTE:  STATUS
+// ============================================================
+.status {
+	opacity: 0;
+	height: 0;
+	@include transition(opacity, 0.3s, ease-in-out);
+	border-radius: var(--radius);
+
+	&._info {
+		margin-top: 10px;
+		padding: 10px;
+		background-color: var(--info);
+		height: auto;
+		color: var(--text);
+		font-size: 16px;
+		font-weight: 400;
+		overflow-wrap: anywhere;
+		opacity: 1;
+		animation: shakeX 0.8s ease-in-out;
+	}
+
+	&._warning {
+		margin-top: 10px;
+		padding: 10px;
+		background-color: var(--warning);
+		height: auto;
+		color: var(--text);
+		font-size: 16px;
+		font-weight: 400;
+		overflow-wrap: anywhere;
+		opacity: 1;
+		animation: shakeX 0.8s ease-in-out;
+	}
+
+	&._danger {
+		margin-top: 10px;
+		padding: 10px;
+		background-color: var(--danger);
+		height: auto;
+		color: var(--text);
+		font-size: 16px;
+		font-weight: 400;
+		overflow-wrap: anywhere;
+		opacity: 1;
+		animation: shakeX 0.8s ease-in-out;
+	}
+
+	&._success {
+		margin-top: 10px;
+		padding: 10px;
+		background-color: var(--success);
+		height: auto;
+		color: var(--text);
+		font-size: 16px;
+		font-weight: 400;
+		overflow-wrap: anywhere;
+		opacity: 1;
+		animation: shakeX 0.8s ease-in-out;
+	}
+}
+
+//  NOTE:  LOADING BUTTON AND PAGE
+// ============================================================
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	@include transition(all, 0.3s, ease-in-out);
+
+	&:after {
+		content: "";
+		border-radius: 50%;
+	}
+
+	&._button {
+		&:after {
+			width: 32px;
+			height: 32px;
+			border: 2px solid var(--text);
+			border-color: var(--text) transparent var(--text) transparent;
+			animation: loading 1.2s linear infinite;
+		}
+	}
+
+	&._page {
+		z-index: 900;
+		position: fixed;
+		top: 0;
+		left: 0;
+		@include transition(margin-top, 1s, linear);
+
+		background-color: var(--color-4);
+		width: 100%;
+		height: 100%;
+
+		cursor: none;
+
+		&:after {
+			display: flex;
+			align-self: center;
+			width: 64px;
+			height: 64px;
+			border: 4px solid var(--change-1);
+			border-color: var(--change-1) transparent var(--change-1) transparent;
+			animation: loading 1.2s linear infinite;
+		}
+	}
+}
+
+//  NOTE:  BOX-COOKIE
+// ============================================================
+.box-cookie {
+	position: fixed;
+	padding: 10px;
+	z-index: 700;
+	left: 0;
+	right: 0;
+	bottom: -40%;
+	background-color: var(--color-1);
+	width: 100%;
+	height: auto;
+	box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.5);
+	border-top-left-radius: var(--radius);
+	border-top-right-radius: var(--radius);
+	display: grid;
+	grid-template-columns: 2fr auto;
+	column-gap: 10px;
+	align-items: center;
+	@include transition(bottom, 2s, ease-in-out);
+	visibility: hidden;
+
+	&.show {
+		bottom: 0;
+	}
+
+	&.hide {
+		bottom: -100vh;
+	}
+
+	.text-cookie {
+		justify-self: start;
+		font-size: 16px;
+		font-weight: 400;
+		color: var(--color-2);
+	}
+
+	.button-cookie {
+		line-height: 0;
+		height: 40px;
+	}
+}
+
+//  NOTE:  ICONS NETWORK FONT-AWESOME
+// ============================================================
+.awesome-1 {
+	padding: 2px;
+	color: var(--change-1);
+	font-size: 32px;
+	@include transition(color, 0.3s, ease-in-out);
+
+	&:hover {
+		color: var(--change-2);
+		animation: scale 1s linear infinite;
+	}
+}

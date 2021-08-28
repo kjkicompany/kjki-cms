@@ -1,0 +1,45 @@
+//  INFO:  RESET
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	font-style: normal;
+	text-decoration: none;
+	outline: none;
+	outline-style: none;
+	list-style: none;
+	list-style-type: none;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+
+	scrollbar-color: var(--change-1) transparent;
+	scrollbar-width: thin;
+
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+
+	&::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+	}
+
+	&::-webkit-scrollbar-track,
+	&::-webkit-scrollbar-track-piece,
+	&::-webkit-resizer,
+	&::-webkit-scrollbar-corner {
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--change-1);
+	}
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+	display: none;
+}

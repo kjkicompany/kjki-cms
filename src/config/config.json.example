@@ -1,0 +1,173 @@
+{
+	"app": {
+		"urlDevelopment": "http://127.0.0.1:4000",
+		"urlProduction": "http://127.0.0.1:3000",
+		"host": "127.0.0.1",
+		"portDevelopment": 4000,
+		"portProduction": 3000,
+		"lang": "en",
+		"dark": "automatic",
+		"changeColor": "color-0",
+		"design": "design-1",
+		"toggleMenu": "show",
+		"iconNetwork": "1A",
+		"title": "KjKi - CMS",
+		"created": "2021",
+		"version": "1.0.0",
+		"getIpPublic": "http://checkip.dyndns.com"
+	},
+	"session": {
+		"nameDevelopment": "SSID_DEV",
+		"nameProduction": "SSID",
+		"secretDevelopment": "secret-SSID_DEV",
+		"secretProduction": "secret-SSID"
+	},
+	"db": {
+		"type": "mongodb",
+		"host": "127.0.0.1",
+		"port": "27017",
+		"user": "sammy",
+		"pass": "secret",
+		"nameDevelopment": "db-cms-kjki-dev",
+		"nameProduction": "db-cms-kjki",
+		"auth": "admin"
+	},
+	"smtp": {
+		"host": "smtp.domain.com",
+		"port": 465,
+		"secure": true,
+		"noReply": {
+			"user": "noreply@domain.com",
+			"pass": "secret"
+		},
+		"webMaster": {
+			"user": "webmaster@domain.com",
+			"pass": "secret"
+		},
+		"admin": {
+			"user": "admin@domain.com",
+			"pass": "secret"
+		},
+		"support": {
+			"user": "support@domain.com",
+			"pass": "secret"
+		},
+		"contact": {
+			"user": "contact@domain.com",
+			"pass": "secret"
+		},
+		"newsLetter": {
+			"user": "newsletter@domain.com",
+			"pass": "secret"
+		},
+		"subscription": {
+			"user": "subscription@domain.com",
+			"pass": "secret"
+		},
+		"ciphers": "SSLv3",
+		"connectionTimeout": 20000,
+		"socketTimeout": 20000,
+		"greetingTimeout": 20000
+	},
+	"stripe": {
+		"secret": "sk_secret",
+		"public": "pk_secret",
+		"apiVersion": "2020-08-27"
+	},
+	"redSocials": [
+		{
+			"id": 1,
+			"name": "linkedin",
+			"url": "https://www.linkedin.com/in/kjkicompany",
+			"visible": true
+		},
+		{
+			"id": 2,
+			"name": "tiktok",
+			"url": "https://www.tiktok.com/@kjkicompany",
+			"visible": true
+		},
+		{
+			"id": 3,
+			"name": "facebook",
+			"url": "https://www.facebook.com/kjkicompany",
+			"visible": true
+		},
+		{
+			"id": 4,
+			"name": "twitter",
+			"url": "https://www.twitter.com/kjkicompany",
+			"visible": true
+		},
+		{
+			"id": 5,
+			"name": "instagram",
+			"url": "https://www.instagram.com/kjkicompany",
+			"visible": true
+		},
+		{
+			"id": 6,
+			"name": "pinterest",
+			"url": "https://www.pinterest.com/kjkicompany",
+			"visible": true
+		},
+		{
+			"id": 7,
+			"name": "youtube",
+			"url": "https://www.youtube.com/kjkicompany",
+			"visible": true
+		}
+	],
+	"cdnsCss": [
+		{
+			"id": 1,
+			"name": "fontAwesome",
+			"href": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
+			"integrity": "sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==",
+			"crossorigin": "anonymous",
+			"referrerpolicy": "no-referrer",
+			"visible": true,
+			"delete": false,
+			"update": true
+		},
+		{
+			"id": 2,
+			"name": "Main",
+			"href": "/assets/css/main.min.css",
+			"integrity": null,
+			"crossorigin": null,
+			"referrerpolicy": null,
+			"visible": true,
+			"delete": false,
+			"update": false
+		}
+	],
+	"cdnsJs": [
+		{
+			"id": 1,
+			"name": "Prototype",
+			"type": null,
+			"src": "/assets/js/prototype.js",
+			"integrity": null,
+			"crossorigin": null,
+			"referrerpolicy": null,
+			"header": false,
+			"visible": true,
+			"delete": false,
+			"update": false
+		},
+		{
+			"id": 2,
+			"name": "Main",
+			"type": "module",
+			"src": "/assets/js/main.js",
+			"integrity": null,
+			"crossorigin": null,
+			"referrerpolicy": null,
+			"header": false,
+			"visible": true,
+			"delete": false,
+			"update": false
+		}
+	]
+}

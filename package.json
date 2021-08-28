@@ -1,0 +1,105 @@
+{
+	"name": "kjki-cms",
+	"version": "1.0.0",
+	"description": "mvc, nodejs, cms, blog, shop, courses, resources",
+	"keywords": [
+		"mvc",
+		"nodejs",
+		"cms",
+		"blog",
+		"shop",
+		"courses",
+		"resources"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "KjKiCompany",
+		"email": "kjkicompany@gmail.com",
+		"url": "http://127.0.0.1:3000/"
+	},
+	"main": "src/main.js",
+	"type": "module",
+	"nodemonConfig": {
+		"ignore": [
+			"**/__/**",
+			"**/.vscode/**",
+			"**/node_modules/**",
+			"**/src/private/**",
+			"**/src/public/assets/img/**",
+			"**/src/public/uploads/**",
+			"**/src/temp/**"
+		]
+	},
+	"scripts": {
+		"check-l": "npm list --depth=0",
+		"check-g": "npm list --depth=0 -g",
+		"update-l": "ncu",
+		"upgrade-l": "ncu -u",
+		"update-g": "ncu -g",
+		"upgrade-g": "ncu -u -g",
+		"start": "set NODE_ENV=production&& node src/main.js",
+		"dev": "set NODE_ENV=development&& nodemon -e ejs,scss,css,js,json src/main.js --delay 0"
+	},
+	"engine": {
+		"nvm": {
+			"linux": {
+				"version": "^0.38.0",
+				"url": "https://github.com/nvm-sh/nvm"
+			},
+			"windows": {
+				"version": "^1.1.7",
+				"url": "https://github.com/coreybutler/nvm-windows"
+			}
+		},
+		"node": {
+			"version": "^16.5.0",
+			"url": "https://nodejs.org"
+		},
+		"npm": {
+			"version": "^7.20.1",
+			"url": "https://nodejs.org"
+		},
+		"npx": {
+			"version": "^7.20.1",
+			"url": "https://nodejs.org"
+		},
+		"pm2": {
+			"version": "^5.0.3",
+			"url": "https://github.com/Unitech/pm2"
+		},
+		"mongodb": {
+			"version": "^5.0.1",
+			"url": "https://www.mongodb.com/try/download/community"
+		},
+		"nginx": {
+			"version": "^1.18.0",
+			"url": "https://www.nginx.com"
+		}
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"canvas": "^2.8.0",
+		"cookie-parser": "^1.4.5",
+		"cookie-session": "^1.4.0",
+		"ejs": "^3.1.6",
+		"express": "^4.17.1",
+		"express-ejs-layouts": "^2.5.1",
+		"express-fileupload": "^1.2.1",
+		"express-useragent": "^1.0.15",
+		"geoip-country": "^4.0.81",
+		"mongoose": "^5.13.7",
+		"mongoose-paginate-v2": "^1.4.1",
+		"node-fetch": "^2.6.1",
+		"nodemailer": "^6.6.3",
+		"stripe": "^8.171.0"
+	},
+	"devDependencies": {
+		"colors": "^1.4.0",
+		"edit-json-file": "^1.6.0",
+		"eslint": "^7.32.0",
+		"magic-globals": "^0.9.1",
+		"nodemon": "^2.0.12",
+		"npm-check-updates": "^11.8.3",
+		"serve-favicon": "^2.5.0"
+	}
+}

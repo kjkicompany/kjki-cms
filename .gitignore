@@ -1,0 +1,6 @@
+__/
+.vscode/
+node_modules/
+/src/config/config.json
+package-lock.json
+pm2-apps.json

@@ -1,0 +1,60 @@
+{
+	"securityCode": {
+		"checkAccountNotFound": "The account does not exist",
+		"errorCode": "Activation error",
+		"accountActivate": "The account is already active",
+		"appTitleDescription": "Activating account",
+
+		"bodyTitle": "Activating account",
+		"bodyDescription": "We have sent your mail a code, copy and paste on this form to activate your account",
+
+		"placeholderCode": "Enter code",
+		"placeholderCaptcha": "Enter captcha",
+
+		"labelCode": "Code",
+		"labelCaptcha": "Captcha",
+
+		"formButton": "Activate",
+
+		"infoText": "Did not the code come to your email?",
+		"infoButton": "Resend code",
+
+		"checkCsrf": "CSRF protection activated",
+		"checkCodeEmpty": "Code is empty",
+		"checkCodeMin": "Code minimum 6 characters",
+		"checkCodeMax": "Code maximum 6 characters",
+		"checkCodeChar": "Wrong code, accepted characters:<p class='text-warning'>a-z A-Z 0-9</p>",
+
+		"checkCaptchaEmpty": "Captcha is Empty",
+		"checkCaptchaMin": "Captcha minimum 7 characters",
+		"checkCaptchaMax": "Captcha maximum 7 characters",
+		"checkCaptchaChar": "Wrong captcha, accepted characters:<p class='text-warning'>A-Z 1-9</p>",
+		"checkCaptchaIncorrect": "Captcha incorrect",
+
+		"checkCodeNotFound": "Code incorrect",
+		"mailBodyTitle": "Activated account",
+		"mailContent": "Hello <b>%s,</b> the account was activated successfully.<br><br>Panel link:<br><br><a class='template-button' href='%s' target='_blank'><span><b>PANEL</b></span></a><br><br>Activation date: <b>%s</b><br><br>If you did not create this account, ignore this message, your email will be removed from our website in the next 48 hours, a thousand apologies.",
+		"mailError": "Error sending mail",
+		"mailFrom": "Activated account",
+		"mailSubject": "Account successfully activated in: %s",
+		"log": "Account admin activated correctly from the panel",
+		"success": "Activated account successfully<br>redirecting in:",
+		"errorUpdate": "Error updating account",
+
+		"errorCodeVerify": "Verification error",
+
+		"appTitleDescriptionVerify": "Verifying account",
+		"bodyTitleVerify": "Verifying account",
+		"bodyDescriptionVerify": "We have sent your mail a code, copy and paste on this form to verify your account",
+		"formButtonVerify": "Verify",
+
+		"mailBodyTitleVerify": "Verified account",
+		"mailContentVerify": "Hello <b>%s,</b> The account was successfully verified.<br><br>Panel link:<br><br><a class='template-button' href='%s' target='_blank'><span><b>PANEL</b></span></a><br><br>Verification date: <b>%s</b><br><br>If you did not create this account, ignore this message, your email will be removed from our website in the next 48 hours, a thousand apologies.",
+		"mailFromVerify": "Verified account",
+		"mailSubjectVerify": "Account successfully verified in: %s",
+
+		"logVerify": "Account verified correctly from the panel",
+
+		"successVerify": "Account was successfully verified<br>redirecting in:"
+	}
+}

@@ -1,0 +1,54 @@
+		<section class="section">
+			<form class="form" action="<%= urlFormPost %>" method="post" autocomplete="off" spellcheck="false" noValidate>
+				<div class="group-form">
+					<a href="/panel" class="logo-form">&nbsp;</a>
+				</div>
+
+				<div class="group-form">
+					<p class="title-form"><%= bodyTitle %></p>
+				</div>
+
+				<div class="group-form">
+					<p class="description-form"><%= bodyDescription %></p>
+				</div>
+
+				<div class="group-form">
+					<div class="custom-input" icon="true">
+						<input value="" class="text" id="input-email" type="text" name="email" placeholder="<%= placeholderEmail %>" required />
+						<i class="icon fas fa-at"></i>
+						<label class="label" for="input-email"><%= labelEmail %></label>
+					</div>
+					<div class="status" id="status-email"></div>
+				</div>
+
+				<div class="group-form">
+					<img class="imgCaptcha" src="/panel/captcha" alt="" width="100%" height="50px">
+
+					<div class="custom-input" icon="true">
+						<input value="" class="text captcha" id="input-captcha" type="text" name="captcha" placeholder="<%= placeholderCaptcha %>" required />
+						<i class="icon fas fa-robot"></i>
+						<label class="label" for="input-captcha"><%= labelCaptcha %></label>
+						<i class="captcha-icon fas fa-retweet" id="change-captcha"></i>
+					</div>
+					<div class="status" id="status-captcha"></div>
+				</div>
+
+				<input type="hidden" name="csrfToken" value="<%= csrfToken %>">
+
+				<div class="group-form">
+					<button class="button-default" type="submit"><%= formButton %></button>
+				</div>
+
+				<div class="group-form">
+					<div class="status" id="status"></div>
+				</div>
+
+				<div class="group-form">
+					<p class="info-form"><%- infoTermsPrivacyLogIn %></p>
+				</div>
+
+				<div class="group-form">
+					<center><%- func.getArrayRedSocials("awesome-1", null, true, null, null, null) %></center>
+				</div>
+			</form>
+		</section>

@@ -1,0 +1,15 @@
+//  INFO:  PAGES
+
+//  NOTE:  ERROR RESOLUTION
+// ============================================================
+.page-error-resolution {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--color-1);
+	color: var(--danger);
+	width: 100%;
+	height: 100%;
+	display: none;
+}
